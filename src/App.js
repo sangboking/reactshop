@@ -38,8 +38,6 @@ function App() {
 
   return (
     <div className="App">
-      <div>안녕하십니까 전 {age} </div>
-      <button onClick={()=>{ setCount(count+1)}}>누르면한살먹기</button>
 
       <Navbar bg="light" expand="lg">
       <Container>
