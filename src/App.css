@@ -27,6 +27,18 @@
 .App-link {
   color: #61dafb;
 }
+.jumbotron{
+  background-color: gainsboro;
+  background-image: url('./background.jpg');
+  background-size: cover;
+  color:white;
+}
+.jumbotron .display-4{
+  padding-top:30px;
+}
+.jumbotron .lead{
+  padding-bottom: 30px;
+}
 
 @keyframes App-logo-spin {
   from {

@@ -1,0 +1,51 @@
+$메인칼라 : #ff0000;
+
+.wow-enter{
+  opacity: 0
+}
+.wow-enter-active{
+  opacity: 1;
+  transition: all 500ms;
+}
+
+@mixin 함수() {
+  background-color: #eeeeee;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  p{
+    margin-bottom: 0;
+  }
+}
+
+.red{
+  color: $메인칼라;
+} 
+
+.my-alert {
+  @include 함수()
+}
+.my-alert2{
+  @extend .my-alert;
+  background-color: #ffe591;
+}
+
+.btn{
+  margin-right:5px;
+}
+
+.my-alert2{
+  position: relative;
+  button{
+    float:right;
+    border: none;
+    background-color: #ffe591;
+    font-size:23px;
+    position:absolute;
+    bottom:15px;
+    right:5px;
+  }
+}
+
